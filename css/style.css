@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    max-width: 375px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.text {
+    padding: 1em;
+}
+
+.price-div {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* =================================
+              IMAGES
+==================================== */
+
+img {
+    width: 100%;
+    border-start-end-radius: inherit;
+    border-start-start-radius: inherit;
+    margin-bottom: 0.5em;
+}
+
+.desktop-img {
+    display: none;
+}
+
+/* ===============================
+          TYPOGRAPHY
+================================= */
+
+.fine-text {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    margin-bottom: 1em;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.9rem;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 0.7em;
+}
+
+.body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.4rem;
+    margin-bottom: 1em;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    margin-right: 0.5em;
+
+}
+
+.crossed-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.7rem;
+}
+
+/* ===============================
+          BUTTON
+================================= */
+
+button {
+    margin: 0 auto;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: hsl(158, 36%, 26%);
+}
+
+/* ==============================
+           MEDIA QUERY
+================================= */
+
+@media (min-width: 500px) {
+    .container {
+        display: flex;
+        max-width: 600px;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: inline;
+        width: 50%;
+    }
+
+    .text {
+        width: 50%;
+        padding: 1.5em;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .fine-text {
+        font-size: 0.9rem;
+        letter-spacing: 0.3em;
+        margin-top: 0.5em;
+    }
+
+    img {
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        border-top-right-radius: 0;
+        height: 100%;
+        margin: 0;
+    }
+
+    button {
+        margin-bottom: 0;
+    }
+
+    .body-text {
+        margin-bottom: 1.5em;
+    }
+
+    .price-div {
+        margin-bottom: 2em;
+    }
+}
